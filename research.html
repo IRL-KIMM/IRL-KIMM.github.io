@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research | Interactive Robotics Lab</title>
+<meta name="description" content="Interactive Robotics Lab at KIMM and UST: robots that physically interact with people, for medical, rehabilitation, and diagnostic applications.">
+<link rel="preload" href="assets/fonts/Paperlogy-4Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+<script>
+(function () {
+  var d = document.documentElement, lang = null;
+  try { lang = localStorage.getItem("irl-lang"); } catch (e) {}
+  if (lang !== "en" && lang !== "ko") lang = /^ko/i.test(navigator.language || "") ? "ko" : "en";
+  d.setAttribute("data-lang", lang); d.lang = lang;
+})();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">
+      <span><b>Interactive Robotics Lab</b><small>KIMM · UST</small></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav"><span></span><span class="sr">Menu</span></button>
+    <nav id="nav" class="nav" aria-label="Main">
+      <ul><li><a href="index.html"><span class="en">Home</span><span class="ko">홈</span></a></li><li><a href="research.html" class="active"><span class="en">Research</span><span class="ko">연구</span></a></li><li class="has-sub"><a href="members-pi.html" aria-haspopup="true"><span class="en">Members</span><span class="ko">구성원</span></a><ul class="sub"><li><a href="members-pi.html"><span class="en">PI</span><span class="ko">연구책임자</span></a></li><li><a href="members-collaborators.html"><span class="en">Collaborators</span><span class="ko">공동연구진</span></a></li><li><a href="members-students.html"><span class="en">Researchers & Students</span><span class="ko">연구원·학생</span></a></li></ul></li><li><a href="publications.html"><span class="en">Publications</span><span class="ko">논문·특허</span></a></li><li><a href="teaching.html"><span class="en">Teaching</span><span class="ko">강의</span></a></li><li><a href="join.html"><span class="en">Join Us</span><span class="ko">지원 안내</span></a></li><li><a href="contact.html"><span class="en">Contact</span><span class="ko">연락처</span></a></li></ul>
+      <button class="lang-toggle" type="button" aria-label="Switch language"><span class="en">한국어</span><span class="ko">English</span></button>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-head"><div class="wrap">
+  <p class="eyebrow"><span class="en">Research</span><span class="ko">연구</span></p>
+  <h1><span class="en">We build robots that physically interact with people</span><span class="ko">사람과 직접 맞닿아 움직이는 로봇을 연구합니다</span></h1>
+  <p class="lead en">Through touch, force, and shared control, and with Physical AI that lets robots learn and act in the real world, we bring robots into medical, rehabilitation, and diagnostic settings.</p>
+  <p class="lead ko">힘과 촉감을 주고받는 제어와 현실에서 배우고 움직이는 Physical AI를 바탕으로 의료·재활·진단 현장에서 쓰이는 로봇을 만듭니다.</p>
+</div></section>
+
+<section class="wrap section">
+  <div class="why">
+    <div>
+      <h3><span class="en">pHRI Control</span><span class="ko">물리적 인간-로봇 상호작용 제어</span></h3>
+      <p class="en">Haptic feedback and stable control for robots connected over networks, and robots and interfaces, including parallel mechanisms, for physical interaction with people. <a href="#teleoperation">01</a></p>
+      <p class="ko">네트워크로 연결된 원격 로봇의 햅틱 피드백과 안정적 제어, 사람과 힘을 주고받는 로봇·인터페이스와 병렬 메커니즘을 연구합니다. <a href="#teleoperation">01</a></p>
+    </div>
+    <div>
+      <h3><span class="en">Physical AI &amp; Lightweight AI</span><span class="ko">Physical AI·경량 AI</span></h3>
+      <p class="en">Robots that learn skills from demonstrations and simulation, and compact AI models that run on the robot's own embedded and FPGA hardware. <a href="#teleoperation">01</a> · <a href="#humanoid">04</a> · <a href="#fault">06</a></p>
+      <p class="ko">시연과 시뮬레이션으로 기술을 익히는 로봇, 그리고 로봇의 임베디드·FPGA 하드웨어에서 바로 도는 경량 AI 모델을 연구합니다. <a href="#teleoperation">01</a> · <a href="#humanoid">04</a> · <a href="#fault">06</a></p>
+    </div>
+    <div>
+      <h3><span class="en">Medical Robots</span><span class="ko">의료로봇</span></h3>
+      <p class="en">Surgical, rehabilitation, and diagnostic robots that carry this work into hospitals and everyday life. <a href="#surgical">02</a> · <a href="#hand">03</a> · <a href="#sampling">05</a></p>
+      <p class="ko">이 기술을 수술·재활·진단 로봇으로 구현해 병원과 일상으로 가져갑니다. <a href="#surgical">02</a> · <a href="#hand">03</a> · <a href="#sampling">05</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <article class="topic" id="teleoperation">
+    <div class="topic-media"><video src="assets/video/teleop-haptics.mp4" poster="assets/img/hero.jpg" autoplay muted loop playsinline preload="metadata" aria-label="A person guiding a robot arm by hand"></video></div>
+    <div>
+      <div class="topic-num">01</div>
+      <h2>Teleoperation, Haptics &amp; Learning-Based Manipulation</h2>
+      <p class="sub-title">원격제어·햅틱·학습 기반 조작</p>
+      <p class="en">Force-feedback teleoperation that stays stable under network delay, applied to remote ultrasound diagnosis, and robot policies that learn from expert demonstrations to go from remote operation toward autonomy.</p>
+      <p class="ko">통신 지연이 있어도 안정적인 힘반향 원격조작을 원격 초음파 진단에 적용하고, 전문가 시연을 배워 스스로 작업하는 로봇으로 나아갑니다.</p>
+      <ul class="chips"><li>time-delayed teleoperation</li><li>haptic feedback</li><li>pHRI</li><li>VLA</li><li>Physical AI</li></ul>
+    </div>
+  </article>
+
+  <article class="topic flip" id="surgical">
+    <div class="topic-media"><img src="assets/img/r-surgical.jpg" alt="Dental implant surgery robot: a cart-mounted robot arm" loading="lazy"></div>
+    <div>
+      <div class="topic-num">02</div>
+      <h2>Image-Guided Surgical &amp; Interventional Robots</h2>
+      <p class="sub-title">영상 가이드 수술·중재 로봇</p>
+      <p class="en">Robots that steer needles and catheters to targets inside the body under CT/MRI guidance, and navigation systems that track surgical tools in real time, from interventional procedures to dental implant surgery.</p>
+      <p class="ko">CT·MRI 영상을 보면서 바늘과 카테터를 몸속 목표 지점까지 안전하고 정밀하게 이끌고, 중재시술부터 치과 임플란트 수술까지 수술 도구를 실시간으로 추적하는 내비게이션 시스템을 만듭니다.</p>
+      <ul class="chips"><li>RCM mechanism</li><li>robotic catheter</li><li>fiber-optic shape sensing</li><li>surgical navigation</li></ul>
+    </div>
+  </article>
+
+  <article class="topic" id="hand">
+    <div class="topic-media"><video src="assets/video/hand-folding.mp4" poster="assets/img/r-hand-folding.jpg" autoplay muted loop playsinline preload="metadata" aria-label="A person with bilateral upper-limb amputation folding a shirt using two robotic prosthetic hands"></video></div>
+    <div>
+      <div class="topic-num">03</div>
+      <h2>Robotic Prosthetic Hands</h2>
+      <p class="sub-title">로봇의수</p>
+      <p class="en">Lightweight, multi-DOF prosthetic hands that read the user's intent from muscle signals and adapt their grasp to everyday objects.</p>
+      <p class="ko">근전도로 사용자의 의도를 읽고 물체 모양에 맞춰 자연스럽게 잡는 경량 다자유도 의수입니다.</p>
+      <ul class="chips"><li>adaptive grasping</li><li>EMG intent recognition</li><li>embedded control</li></ul>
+    </div>
+  </article>
+
+  <article class="topic flip" id="humanoid">
+    <div class="topic-media"><img src="assets/img/r-humanoid.jpg" alt="Multi-fingered humanoid robot hands" loading="lazy"></div>
+    <div>
+      <div class="topic-num">04</div>
+      <h2>Humanoid Robots</h2>
+      <p class="sub-title">휴머노이드 로봇</p>
+      <p class="en">Humanoid upper bodies with multi-fingered hands and arms that recognize objects through cameras and carry manipulation skills learned in simulation over to the real robot, together with KIMM's AI Humanoid Global Top Research Lab.</p>
+      <p class="ko">다지 로봇핸드와 팔을 갖춘 휴머노이드 상체 플랫폼입니다. 카메라로 물체를 인식하고, 시뮬레이션에서 익힌 조작 기술을 실제 로봇으로 옮깁니다. 한국기계연구원 AI휴머노이드전략연구단과 함께 연구합니다.</p>
+      <ul class="chips"><li>humanoid manipulation</li><li>multi-fingered hand</li><li>object recognition</li><li>sim-to-real</li><li>Physical AI</li></ul>
+    </div>
+  </article>
+
+  <article class="topic" id="sampling">
+    <div class="topic-media"><img src="assets/img/r-sampling.jpg" alt="Blood sampling robot with a needle insertion module" loading="lazy"></div>
+    <div>
+      <div class="topic-num">05</div>
+      <h2>Robotic Blood Sampling &amp; Point-of-Care Diagnostics</h2>
+      <p class="sub-title">로보틱 검체채취와 현장진단</p>
+      <p class="en">Robots that locate veins with AI-based imaging, draw blood automatically, and hand the sample straight to on-site diagnosis.</p>
+      <p class="ko">혈액을 자동으로 채취하고, 현장에서 질환 유무를 곧바로 판단합니다.</p>
+      <ul class="chips"><li>near-infrared vein detection</li><li>needle insertion</li><li>point-of-care testing</li></ul>
+    </div>
+  </article>
+
+  <article class="topic flip" id="fault">
+    <div class="topic-media"><svg class="topic-fig" viewBox="0 0 640 400" role="img" aria-label="Temporal max pooling: class probabilities of w consecutive segments are pooled by taking the maximum per class, and the class with the highest pooled probability is the diagnosis."><rect width="640" height="400" rx="12" fill="#F5F6F7"/><text x="28" y="44" font-size="21" font-weight="700" fill="#292929">Temporal Max Pooling</text><text x="28" y="66" font-size="13" fill="#6F6F6F">Inference-time post-processing over w consecutive segments</text><rect x="24" y="96" width="282" height="210" rx="10" fill="#fff" stroke="#FD8207" stroke-width="1.6" stroke-dasharray="6 4"/><text x="40" y="120" font-size="12.5" fill="#6F6F6F">Softmax outputs of each segment</text><rect x="40.0" y="181.4" width="6" height="50.6" rx="1.5" fill="#B9BEC3"/><rect x="49.0" y="223.2" width="6" height="8.8" rx="1.5" fill="#B9BEC3"/><rect x="58.0" y="194.6" width="6" height="37.4" rx="1.5" fill="#B9BEC3"/><rect x="67.0" y="224.3" width="6" height="7.7" rx="1.5" fill="#B9BEC3"/><rect x="76.0" y="226.5" width="6" height="5.5" rx="1.5" fill="#B9BEC3"/><line x1="38" y1="232" x2="84" y2="232" stroke="#C9CDD1" stroke-width="1.2"/><text x="61.0" y="254" text-anchor="middle" font-size="16" font-family="Times New Roman, serif" font-style="italic" fill="#292929">p<tspan dy="4" font-size="12.0">t</tspan><tspan dy="-4"></tspan></text><rect x="98.0" y="174.8" width="6" height="57.2" rx="1.5" fill="#B9BEC3"/><rect x="107.0" y="221.0" width="6" height="11.0" rx="1.5" fill="#B9BEC3"/><rect x="116.0" y="203.4" width="6" height="28.6" rx="1.5" fill="#B9BEC3"/><rect x="125.0" y="224.3" width="6" height="7.7" rx="1.5" fill="#B9BEC3"/><rect x="134.0" y="226.5" width="6" height="5.5" rx="1.5" fill="#B9BEC3"/><line x1="96" y1="232" x2="142" y2="232" stroke="#C9CDD1" stroke-width="1.2"/><text x="119.0" y="254" text-anchor="middle" font-size="16" font-family="Times New Roman, serif" font-style="italic" fill="#292929">p<tspan dy="4" font-size="12.0">t+1</tspan><tspan dy="-4"></tspan></text><rect x="184.0" y="221.0" width="6" height="11.0" rx="1.5" fill="#B9BEC3"/><rect x="193.0" y="226.5" width="6" height="5.5" rx="1.5" fill="#B9BEC3"/><rect x="202.0" y="146.2" width="6" height="85.8" rx="1.5" fill="#FD8207"/><rect x="211.0" y="227.6" width="6" height="4.4" rx="1.5" fill="#B9BEC3"/><rect x="220.0" y="228.7" width="6" height="3.3" rx="1.5" fill="#B9BEC3"/><line x1="182" y1="232" x2="228" y2="232" stroke="#C9CDD1" stroke-width="1.2"/><text x="205.0" y="254" text-anchor="middle" font-size="16" font-family="Times New Roman, serif" font-style="italic" fill="#292929">p<tspan dy="4" font-size="12.0">t+w−2</tspan><tspan dy="-4"></tspan></text><rect x="242.0" y="177.0" width="6" height="55.0" rx="1.5" fill="#B9BEC3"/><rect x="251.0" y="218.8" width="6" height="13.2" rx="1.5" fill="#B9BEC3"/><rect x="260.0" y="205.6" width="6" height="26.4" rx="1.5" fill="#B9BEC3"/><rect x="269.0" y="223.2" width="6" height="8.8" rx="1.5" fill="#B9BEC3"/><rect x="278.0" y="225.4" width="6" height="6.6" rx="1.5" fill="#B9BEC3"/><line x1="240" y1="232" x2="286" y2="232" stroke="#C9CDD1" stroke-width="1.2"/><text x="263.0" y="254" text-anchor="middle" font-size="16" font-family="Times New Roman, serif" font-style="italic" fill="#292929">p<tspan dy="4" font-size="12.0">t+w−1</tspan><tspan dy="-4"></tspan></text><text x="163" y="202" text-anchor="middle" font-size="20" fill="#6F6F6F">⋯</text><path d="M40,268 v6 H282 v-6" fill="none" stroke="#6F6F6F" stroke-width="1.2"/><text x="161" y="290" text-anchor="middle" font-size="14" font-family="Times New Roman, serif" font-style="italic" fill="#292929">w</text><line x1="312" y1="176" x2="349" y2="176" stroke="#292929" stroke-width="1.6"/><path d="M348,171 L356,176 L348,181 Z" fill="#292929"/><text x="334.0" y="166" text-anchor="middle" font-size="13" fill="#292929" font-weight="600">max</text><rect x="360.0" y="174.8" width="12" height="57.2" rx="1.5" fill="#B9BEC3"/><rect x="380.0" y="218.8" width="12" height="13.2" rx="1.5" fill="#B9BEC3"/><rect x="400.0" y="146.2" width="12" height="85.8" rx="1.5" fill="#FD8207"/><rect x="420.0" y="223.2" width="12" height="8.8" rx="1.5" fill="#B9BEC3"/><rect x="440.0" y="225.4" width="12" height="6.6" rx="1.5" fill="#B9BEC3"/><line x1="358" y1="232" x2="454" y2="232" stroke="#C9CDD1" stroke-width="1.2"/><text x="366" y="248" text-anchor="middle" font-size="10.5" fill="#6F6F6F">NR</text><text x="386" y="248" text-anchor="middle" font-size="10.5" fill="#6F6F6F">BF</text><text x="406" y="248" text-anchor="middle" font-size="10.5" fill="#FD8207" font-weight="700">MF</text><text x="426" y="248" text-anchor="middle" font-size="10.5" fill="#6F6F6F">SF</text><text x="446" y="248" text-anchor="middle" font-size="10.5" fill="#6F6F6F">EF</text><text x="406.0" y="274" text-anchor="middle" font-size="14" font-family="Times New Roman, serif" font-style="italic" fill="#292929">p̂<tspan dy="4" font-size="12.0">t</tspan><tspan dy="-4"></tspan></text><line x1="460" y1="176" x2="499" y2="176" stroke="#292929" stroke-width="1.6"/><path d="M498,171 L506,176 L498,181 Z" fill="#292929"/><text x="483.0" y="166" text-anchor="middle" font-size="13" fill="#292929" font-weight="600">argmax</text><rect x="512" y="140" width="112" height="72" rx="10" fill="#03804F"/><text x="568" y="172" text-anchor="middle" font-size="17" font-family="Times New Roman, serif" font-style="italic" fill="#fff">ŷ<tspan dy="4" font-size="11">t</tspan><tspan dy="-4"> = </tspan><tspan font-family="Paperlogy, sans-serif" font-style="normal" font-weight="700">MF</tspan></text><text x="568" y="194" text-anchor="middle" font-size="11.5" fill="#E6F4EC">magnet fault</text><text x="320" y="348" text-anchor="middle" font-size="16" font-family="Times New Roman, serif" font-style="italic" fill="#292929">p̂<tspan dy="4" font-size="12.0">t,c</tspan><tspan dy="-4"></tspan> = <tspan font-style="normal">max</tspan><tspan dy="5" font-size="10.5">i ∈ {0, …, w−1}</tspan><tspan dy="-5"> </tspan>p<tspan dy="4" font-size="12.0">t+i,c</tspan><tspan dy="-4"></tspan><tspan dx="28">ŷ<tspan dy="4" font-size="12.0">t</tspan><tspan dy="-4"></tspan> = </tspan><tspan font-style="normal">argmax</tspan><tspan dy="5" font-size="10.5">c</tspan><tspan dy="-5"> </tspan>p̂<tspan dy="4" font-size="12.0">t,c</tspan><tspan dy="-4"></tspan></text></svg></div>
+    <div>
+      <div class="topic-num">06</div>
+      <h2>Lightweight AI for Robot Drive Modules</h2>
+      <p class="sub-title">로봇 구동모듈 경량 AI</p>
+      <p class="en">Learning-based diagnosis that finds faults in motor drive modules even at sensor locations never seen during training. We make these models small enough to run on the drive's own embedded and FPGA hardware, toward robot actuators that can be trusted in the field.</p>
+      <p class="ko">학습 때 보지 못한 센서 위치에서도 모터 구동모듈의 고장을 찾아내는 AI 진단 기술입니다. 모델을 경량화해 구동모듈의 임베디드·FPGA 하드웨어에서 바로 돌아가게 하고, 현장에서 믿고 쓸 수 있는 로봇 구동부를 만듭니다.</p>
+      <ul class="chips"><li>PMSM drive</li><li>fault diagnosis</li><li>lightweight AI</li><li>edge AI · FPGA</li><li>smart gate driver</li></ul>
+    </div>
+  </article>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <p class="foot-name">Interactive Robotics Lab</p>
+      <p><span class="en">Department of Robot Applications<br>Korea Institute of Machinery &amp; Materials (KIMM)</span><span class="ko">한국기계연구원 로봇응용연구실</span></p>
+      <p><span class="en">330 Techno Sunhwan-ro, Yuga-eup, Dalseong-gun, Daegu 42994, Korea</span><span class="ko">(42994) 대구광역시 달성군 유가읍 테크노순환로 330</span></p>
+    </div>
+    <div>
+      <p><a href="mailto:jangho@kimm.re.kr">jangho@kimm.re.kr</a></p>
+      <p><a href="https://scholar.google.com/citations?sortby=pubdate&hl=en&user=ayS6TMIAAAAJ&view_op=list_works">Google Scholar</a> · <a href="https://www.kimm.re.kr">KIMM</a> · <a href="https://www.ust.ac.kr">UST</a></p>
+      <p class="copy">© 2026 Interactive Robotics Lab</p>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

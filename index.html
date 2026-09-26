@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interactive Robotics Lab</title>
+<meta name="description" content="Interactive Robotics Lab at KIMM and UST: robots that physically interact with people, for medical, rehabilitation, and diagnostic applications.">
+<link rel="preload" href="assets/fonts/Paperlogy-4Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+<script>
+(function () {
+  var d = document.documentElement, lang = null;
+  try { lang = localStorage.getItem("irl-lang"); } catch (e) {}
+  if (lang !== "en" && lang !== "ko") lang = /^ko/i.test(navigator.language || "") ? "ko" : "en";
+  d.setAttribute("data-lang", lang); d.lang = lang;
+})();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">
+      <span><b>Interactive Robotics Lab</b><small>KIMM · UST</small></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav"><span></span><span class="sr">Menu</span></button>
+    <nav id="nav" class="nav" aria-label="Main">
+      <ul><li><a href="index.html" class="active"><span class="en">Home</span><span class="ko">홈</span></a></li><li><a href="research.html"><span class="en">Research</span><span class="ko">연구</span></a></li><li class="has-sub"><a href="members-pi.html" aria-haspopup="true"><span class="en">Members</span><span class="ko">구성원</span></a><ul class="sub"><li><a href="members-pi.html"><span class="en">PI</span><span class="ko">연구책임자</span></a></li><li><a href="members-collaborators.html"><span class="en">Collaborators</span><span class="ko">공동연구진</span></a></li><li><a href="members-students.html"><span class="en">Researchers & Students</span><span class="ko">연구원·학생</span></a></li></ul></li><li><a href="publications.html"><span class="en">Publications</span><span class="ko">논문·특허</span></a></li><li><a href="teaching.html"><span class="en">Teaching</span><span class="ko">강의</span></a></li><li><a href="join.html"><span class="en">Join Us</span><span class="ko">지원 안내</span></a></li><li><a href="contact.html"><span class="en">Contact</span><span class="ko">연락처</span></a></li></ul>
+      <button class="lang-toggle" type="button" aria-label="Switch language"><span class="en">한국어</span><span class="ko">English</span></button>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="wrap hero">
+  <div>
+    <p class="eyebrow">KIMM · UST-KIMM School</p>
+    <h1><span class="en">Robots that work with people, in physical contact.</span><span class="ko">사람과 맞닿아 함께 일하는 로봇을 연구합니다.</span></h1>
+    <p class="lead en">The Interactive Robotics Lab studies physical human-robot interaction (pHRI), in which robots and people exchange force and touch, together with Physical AI and lightweight AI for robot control, and brings that work into medical, rehabilitation, and diagnostic robots.</p>
+    <p class="lead ko">Interactive Robotics Lab은 사람과 힘·촉감을 주고받는 물리적 인간-로봇 상호작용(pHRI)과 로봇 제어를 위한 Physical AI·경량 AI를 연구하고, 이를 의료·재활·진단 로봇으로 구현합니다.</p>
+    <ul class="chips hero-keys"><li>pHRI</li><li>Physical AI</li><li><span class="en">Lightweight AI</span><span class="ko">경량 AI</span></li><li><span class="en">Medical Robots</span><span class="ko">의료로봇</span></li></ul>
+    <p class="muted en">We work within the Department of Robot Applications, Daegu-Gyeongbuk Convergence Research Division, Korea Institute of Machinery &amp; Materials (KIMM), and train graduate students through the UST-KIMM School.</p>
+    <p class="muted ko">한국기계연구원 대경권융합연구본부 로봇응용연구실 안에서 활동하며, UST-KIMM 스쿨을 통해 대학원생을 지도합니다.</p>
+    <div class="actions">
+      <a class="btn" href="research.html"><span class="en">Our Research</span><span class="ko">연구 보기</span></a>
+      <a class="btn btn-ghost" href="join.html"><span class="en">Join Us</span><span class="ko">지원 안내</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="wrap">
+    <div class="section-head">
+      <h2><span class="en">Research at a Glance</span><span class="ko">연구 분야</span></h2>
+      <a class="more" href="research.html"><span class="en">All research →</span><span class="ko">자세히 보기 →</span></a>
+    </div>
+    <div class="cards">
+      <a class="card" href="research.html#teleoperation">
+        <img src="assets/img/hero.jpg" alt="A person guiding a robot arm by hand" loading="lazy">
+        <div class="card-body"><span class="num-tag">01</span>
+          <h3><span class="en">Teleoperation &amp; Haptics</span><span class="ko">원격제어·햅틱</span></h3>
+          <p class="en">Stable force-feedback teleoperation and learning from demonstration</p>
+          <p class="ko">지연에도 안정적인 힘반향 원격조작과 시연 학습</p></div>
+      </a>
+      <a class="card" href="research.html#surgical">
+        <img src="assets/img/r-surgical.jpg" alt="Dental implant surgery robot: a cart-mounted robot arm" loading="lazy">
+        <div class="card-body"><span class="num-tag">02</span>
+          <h3><span class="en">Image-Guided Surgical Robots</span><span class="ko">영상 가이드 수술·중재 로봇</span></h3>
+          <p class="en">Needle, catheter, and implant surgery</p>
+          <p class="ko">바늘·카테터 시술과 임플란트 수술</p></div>
+      </a>
+      <a class="card" href="research.html#hand">
+        <img src="assets/img/r-hand-folding.jpg" alt="A person folding a shirt using two robotic prosthetic hands" loading="lazy">
+        <div class="card-body"><span class="num-tag">03</span>
+          <h3><span class="en">Robotic Prosthetic Hands</span><span class="ko">로봇의수</span></h3>
+          <p class="en">Lightweight multi-DOF hands for everyday tasks</p>
+          <p class="ko">일상 동작을 돕는 경량 다자유도 의수</p></div>
+      </a>
+      <a class="card" href="research.html#humanoid">
+        <img src="assets/img/r-humanoid.jpg" alt="Multi-fingered humanoid robot hands" loading="lazy">
+        <div class="card-body"><span class="num-tag">04</span>
+          <h3><span class="en">Humanoid Robots</span><span class="ko">휴머노이드 로봇</span></h3>
+          <p class="en">Multi-fingered hands and sim-to-real manipulation</p>
+          <p class="ko">다지 로봇핸드와 sim-to-real 조작</p></div>
+      </a>
+      <a class="card" href="research.html#sampling">
+        <img src="assets/img/r-sampling.jpg" alt="Blood sampling robot with a needle insertion module" loading="lazy">
+        <div class="card-body"><span class="num-tag">05</span>
+          <h3><span class="en">Robotic Blood Sampling</span><span class="ko">로보틱 검체채취와 현장진단</span></h3>
+          <p class="en">AI vein detection and point-of-care testing</p>
+          <p class="ko">AI 정맥 검출과 현장진단</p></div>
+      </a>
+      <a class="card" href="research.html#fault">
+        <svg class="topic-fig" viewBox="0 0 640 400" role="img" aria-label="Temporal max pooling: class probabilities of w consecutive segments are pooled by taking the maximum per class, and the class with the highest pooled probability is the diagnosis."><rect width="640" height="400" fill="#F5F6F7"/><rect x="22" y="40" width="392" height="198" rx="12" fill="#fff" stroke="#FD8207" stroke-width="2.4" stroke-dasharray="9 6"/><rect x="46.0" y="145.0" width="10" height="69.0" rx="1.5" fill="#B9BEC3"/><rect x="61.0" y="202.0" width="10" height="12.0" rx="1.5" fill="#B9BEC3"/><rect x="76.0" y="163.0" width="10" height="51.0" rx="1.5" fill="#B9BEC3"/><rect x="91.0" y="203.5" width="10" height="10.5" rx="1.5" fill="#B9BEC3"/><rect x="106.0" y="206.5" width="10" height="7.5" rx="1.5" fill="#B9BEC3"/><line x1="44" y1="214" x2="118" y2="214" stroke="#C9CDD1" stroke-width="1.2"/><rect x="128.0" y="136.0" width="10" height="78.0" rx="1.5" fill="#B9BEC3"/><rect x="143.0" y="199.0" width="10" height="15.0" rx="1.5" fill="#B9BEC3"/><rect x="158.0" y="175.0" width="10" height="39.0" rx="1.5" fill="#B9BEC3"/><rect x="173.0" y="203.5" width="10" height="10.5" rx="1.5" fill="#B9BEC3"/><rect x="188.0" y="206.5" width="10" height="7.5" rx="1.5" fill="#B9BEC3"/><line x1="126" y1="214" x2="200" y2="214" stroke="#C9CDD1" stroke-width="1.2"/><rect x="250.0" y="199.0" width="10" height="15.0" rx="1.5" fill="#B9BEC3"/><rect x="265.0" y="206.5" width="10" height="7.5" rx="1.5" fill="#B9BEC3"/><rect x="280.0" y="97.0" width="10" height="117.0" rx="1.5" fill="#FD8207"/><rect x="295.0" y="208.0" width="10" height="6.0" rx="1.5" fill="#B9BEC3"/><rect x="310.0" y="209.5" width="10" height="4.5" rx="1.5" fill="#B9BEC3"/><line x1="248" y1="214" x2="322" y2="214" stroke="#C9CDD1" stroke-width="1.2"/><rect x="332.0" y="139.0" width="10" height="75.0" rx="1.5" fill="#B9BEC3"/><rect x="347.0" y="196.0" width="10" height="18.0" rx="1.5" fill="#B9BEC3"/><rect x="362.0" y="178.0" width="10" height="36.0" rx="1.5" fill="#B9BEC3"/><rect x="377.0" y="202.0" width="10" height="12.0" rx="1.5" fill="#B9BEC3"/><rect x="392.0" y="205.0" width="10" height="9.0" rx="1.5" fill="#B9BEC3"/><line x1="330" y1="214" x2="404" y2="214" stroke="#C9CDD1" stroke-width="1.2"/><text x="222" y="174" text-anchor="middle" font-size="32" fill="#6F6F6F">⋯</text><path d="M46,258 v9 H402 v-9" fill="none" stroke="#6F6F6F" stroke-width="2"/><text x="224" y="298" text-anchor="middle" font-size="24" fill="#292929"><tspan font-family="Times New Roman, serif" font-style="italic" font-size="28">w</tspan> segments</text><line x1="424" y1="150" x2="452" y2="150" stroke="#292929" stroke-width="2.4"/><path d="M450,142 L462,150 L450,158 Z" fill="#292929"/><text x="443" y="134" text-anchor="middle" font-size="22" font-weight="700" fill="#292929">max</text><rect x="470.0" y="136.0" width="20" height="78.0" rx="1.5" fill="#B9BEC3"/><rect x="496.0" y="196.0" width="20" height="18.0" rx="1.5" fill="#B9BEC3"/><rect x="522.0" y="97.0" width="20" height="117.0" rx="1.5" fill="#FD8207"/><rect x="548.0" y="202.0" width="20" height="12.0" rx="1.5" fill="#B9BEC3"/><rect x="574.0" y="205.0" width="20" height="9.0" rx="1.5" fill="#B9BEC3"/><line x1="468" y1="214" x2="596" y2="214" stroke="#C9CDD1" stroke-width="1.2"/><text x="532" y="244" text-anchor="middle" font-size="22" font-weight="700" fill="#FD8207">MF</text><line x1="532" y1="258" x2="532" y2="284" stroke="#292929" stroke-width="2.4"/><path d="M524,282 L532,294 L540,282 Z" fill="#292929"/><text x="522" y="280" text-anchor="end" font-size="22" font-weight="700" fill="#292929">argmax</text><rect x="452" y="300" width="160" height="72" rx="12" fill="#03804F"/><text x="532" y="347" text-anchor="middle" font-size="32" font-family="Times New Roman, serif" font-style="italic" fill="#fff">ŷ<tspan dy="6" font-size="20">t</tspan><tspan dy="-6"> = </tspan><tspan font-family="Paperlogy, sans-serif" font-style="normal" font-weight="700">MF</tspan></text></svg>
+        <div class="card-body"><span class="num-tag">06</span>
+          <h3><span class="en">Lightweight AI for Robot Drives</span><span class="ko">로봇 구동모듈 경량 AI</span></h3>
+          <p class="en">Fault diagnosis that runs on edge hardware</p>
+          <p class="ko">엣지 하드웨어에서 도는 고장진단</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap news-grid">
+    <div>
+      <h2><span class="en">News</span><span class="ko">소식</span></h2>
+      <ul class="news">
+        <li><time datetime="2026-10">2026.10</time><span><span class="en"><a href="student-donggyu-youn.html">Donggyu Youn</a> will present a poster at ICCAS 2026 in Sapporo, Japan (Oct. 27–30), supported by the 2026 2nd UST International Conference Presentation Support Program.</span><span class="ko"><a href="student-donggyu-youn.html">윤동규</a> 학생이 2026년 제2차 UST 국제학술발표지원사업의 지원을 받아 ICCAS 2026(일본 삿포로, 10.27–30)에서 포스터를 발표합니다.</span></span></li>
+        <li><time datetime="2026-10">2026.10</time><span><span class="en"><a href="student-donggyu-youn.html">Donggyu Youn</a> will give an oral presentation at USTIC 2026 (Oct. 1–2, DCC, Daejeon).</span><span class="ko"><a href="student-donggyu-youn.html">윤동규</a> 학생이 USTIC 2026(10.1–2, 대전컨벤션센터)에서 구두 발표를 합니다.</span></span></li>
+        <li><time datetime="2026-09">2026.09</time><span><span class="en">A paper first-authored by <a href="student-donggyu-youn.html">Donggyu Youn</a> has been published in <a href="https://doi.org/10.1038/s41598-026-73197-0"><em>Scientific Reports</em></a> (IF 4.9, JCR 14.6%).</span><span class="ko"><a href="student-donggyu-youn.html">윤동규</a> 학생이 1저자로 작성한 논문이 <a href="https://doi.org/10.1038/s41598-026-73197-0"><em>Scientific Reports</em></a>(IF 4.9, JCR 14.6%)에 게재되었습니다.</span></span></li>
+        <li><time datetime="2026-09">2026.09</time><span><span class="en"><a href="student-huynh-thanh-lam.html">Huynh Thanh Lam</a> joined the lab as a Ph.D. student. Welcome!</span><span class="ko"><a href="student-huynh-thanh-lam.html">후인탄람</a> 학생이 박사과정으로 연구실에 합류했습니다.</span></span></li>
+        <li><time datetime="2026-07">2026.07</time><span><span class="en"><a href="student-donggyu-youn.html">Donggyu Youn</a> won the Grand Prize (1st place) at the UST-KIMM School Academic Festival.</span><span class="ko"><a href="student-donggyu-youn.html">윤동규</a> 학생이 UST-KIMM 스쿨 학술제에서 대상(1위)을 받았습니다.</span></span></li>
+        <li><time datetime="2026-05">2026.05</time><span><span class="en">Dr. Jang Ho Cho received a Commendation from the Deputy Prime Minister and Minister of Science and ICT for pHRI control and technology transfer in medical robotics.</span><span class="ko">조장호 박사가 의료로봇 분야 인간-로봇 물리적 상호작용 제어와 기술이전 공로로 부총리 겸 과학기술정보통신부 장관 표창을 받았습니다.</span></span></li>
+      </ul>
+    </div>
+    <aside class="callout">
+      <p class="eyebrow"><span class="en">We are recruiting</span><span class="ko">모집 중</span></p>
+      <h3><span class="en">Build robots that work with people</span><span class="ko">사람과 함께 일하는 로봇을 만들어요</span></h3>
+      <p class="en">We are looking for M.S. and Ph.D. students and interns who want to build robots that interact with people.</p>
+      <p class="ko">사람과 상호작용하는 로봇을 함께 만들 석·박사과정 학생과 인턴을 찾고 있습니다.</p>
+      <a class="btn" href="join.html"><span class="en">How to join</span><span class="ko">지원 안내 보기</span></a>
+    </aside>
+  </div>
+</section>
+
+<div class="wrap affil">Korea Institute of Machinery &amp; Materials · Department of Robot Applications · UST-KIMM School</div>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <p class="foot-name">Interactive Robotics Lab</p>
+      <p><span class="en">Department of Robot Applications<br>Korea Institute of Machinery &amp; Materials (KIMM)</span><span class="ko">한국기계연구원 로봇응용연구실</span></p>
+      <p><span class="en">330 Techno Sunhwan-ro, Yuga-eup, Dalseong-gun, Daegu 42994, Korea</span><span class="ko">(42994) 대구광역시 달성군 유가읍 테크노순환로 330</span></p>
+    </div>
+    <div>
+      <p><a href="mailto:jangho@kimm.re.kr">jangho@kimm.re.kr</a></p>
+      <p><a href="https://scholar.google.com/citations?sortby=pubdate&hl=en&user=ayS6TMIAAAAJ&view_op=list_works">Google Scholar</a> · <a href="https://www.kimm.re.kr">KIMM</a> · <a href="https://www.ust.ac.kr">UST</a></p>
+      <p class="copy">© 2026 Interactive Robotics Lab</p>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
