@@ -145,7 +145,7 @@ img.whole { object-fit: contain !important; background: var(--bg-soft); }
 .person { display: grid; grid-template-columns: 280px 1fr; gap: 56px; align-items: start; }
 .person-aside { position: sticky; top: 96px; }
 .photo { width: 100%; aspect-ratio: 3 / 4; border-radius: var(--r); }
-img.photo { object-fit: cover; object-position: 50% 20%; background: var(--bg-soft); }
+img.photo { object-fit: cover; object-position: 50% 20%; background: var(--bg-soft); border: 1px solid var(--line); box-sizing: border-box; }
 .block h4 { font-size: 15px; font-weight: 600; color: var(--green-dk); letter-spacing: .02em; margin: 18px 0 6px; }
 .block h3 + h4 { margin-top: 0; }
 .person-aside h2 { font-size: 24px; margin: 18px 0 2px; }
