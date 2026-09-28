@@ -203,6 +203,7 @@ a.pcard:hover { text-decoration: none; border-color: var(--green); box-shadow: 0
 /* 등급 색: 우수학술대회·JCR 20% 이내 = 연한 주황, 최우수학술대회·JCR 5% 이내 = 진한 주황 */
 .metric-kiise { color: #9A4A00; background: #FFF1E3; border-color: transparent; }
 .metric-top { color: #fff; background: #E36F00; border-color: transparent; }
+.metric-transfer { color: #fff; background: var(--green-dk); border-color: transparent; }
 a.metric-doi { color: var(--green-dk); background: #fff; border-color: var(--green); }
 a.metric-doi:hover { background: var(--green-bg); text-decoration: none; }
 
